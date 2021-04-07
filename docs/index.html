@@ -13,10 +13,28 @@
   <script>
     window.$docsify = {
       name: '学习笔记',
-      repo: '',
+      repo: 'https://github.com/yaojianzao/',
       loadSidebar: true,
       autoHeader: true,
       coverpage: true,
+      onlyCover: false,//只在访问主页时加载封面
+      subMaxLevel: 3,//自动目录层级
+      search: {
+            paths: 'auto',
+            placeholder: '🔍 搜索 ',
+            noData: '哎呀，没有找到呀！ ',
+            // Headline depth, 1 - 6
+            depth: 3
+        },
+        copyCode: {
+            buttonText : '复制',
+            errorText  : 'Error',
+            successText: 'OK!'
+        },
+        pagination: {
+            previousText: '上一章',
+            nextText: '下一章',
+        },
     }
   </script>
   <!-- Docsify v4 -->
